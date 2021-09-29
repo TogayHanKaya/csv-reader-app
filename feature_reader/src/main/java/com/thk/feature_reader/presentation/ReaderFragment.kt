@@ -11,7 +11,6 @@ import com.thk.csvreader.base.presentation.fragment.InjectionFragment
 import com.thk.feature_reader.R
 import com.thk.feature_reader.databinding.FragmentReaderBinding
 import com.thk.feature_reader.presentation.list.LineListAdapter
-import com.thk.feature_reader.test.EspressoIdlingResource
 import org.kodein.di.generic.instance
 
 class ReaderFragment : InjectionFragment(R.layout.fragment_reader) {
@@ -24,7 +23,6 @@ class ReaderFragment : InjectionFragment(R.layout.fragment_reader) {
 
     private val stateObserver = Observer<ReaderViewModel.ViewState> {
         lineListAdapter.lines = it.lines
-        EspressoIdlingResource.decrement()
         binding.progressBar.visible = it.isLoading
     }
 
@@ -36,7 +34,6 @@ class ReaderFragment : InjectionFragment(R.layout.fragment_reader) {
 
         if (viewModel.stateLiveData.value?.lines == null) {
             binding.progressBar.visible()
-            EspressoIdlingResource.increment()
             viewModel.loadData()
         }
     }

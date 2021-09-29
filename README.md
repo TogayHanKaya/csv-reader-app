@@ -8,7 +8,9 @@
 ## Characteristics
 
 [Modular Architecture](https://www.youtube.com/watch?v=PZBg5DIzNww)
+
 [Single Activity architecture](https://www.youtube.com/watch?v=2k8x8V77CrU)
+
 [MVVM](https://developer.android.com/jetpack/guide) + [MVI](https://www.raywenderlich.com/817602-mvi-architecture-for-android-tutorial-getting-started)
 
 ## Tech stack

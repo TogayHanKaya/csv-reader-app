@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:moduleName="feature_reader"
+    app:startDestination="@id/ReaderFragment"
+    tools:ignore="UnusedResources">
+
+    <fragment
+        android:id="@+id/ReaderFragment"
+        android:name="com.thk.feature_reader.presentation.ReaderFragment"
+        android:label="ReaderFragment"
+        app:moduleName="feature_reader">
+    </fragment>
+
+</navigation>
